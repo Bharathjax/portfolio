@@ -2,7 +2,7 @@
 
 :root{
   --pink:rgb(255,0,166);
-  --black:#333;
+  --black:rgb(20,20,20);
   --white:#fff;
   --light-color:#777;
   --light-bg:#eee;
@@ -17,6 +17,20 @@
   text-decoration: none;
  
   transition: all .2s linear;
+}
+#preloader{
+  background: #000 url(images/preloader.gif) no-repeat center center;
+  background-size: 30%;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+
+}
+
+.logo{
+  font-size: 8em;
+  color: #fff;
 }
 
 
@@ -62,7 +76,7 @@ html::-webkit-scrollbar-thumb{
 
 .container .profile{
   flex:1 1 400px;
-  background: var(--black);
+  background: #292428;
   padding:20px 30px;
   text-align: center;
   position: sticky;
